@@ -1,0 +1,120 @@
+(base) ema@x86_64-apple-darwin13 classical_distinguisher % python test_classical_distinguisher.py
+
+Cipher                            = TEA
+
+key                               = [298506318, 2518060651, 1883933468, 1471931859]
+number of attacked rounds         = 4
+distinguisher success probability = 1/2^14.39 = 4.657773464845454e-05
+input difference                  = [4294967281, 4294967295]
+round difference                  = [15, 4294967295]
+number of samples                 = 2^14.39 = 21470
+
+
+SUMMARY:
+--------
+
+ACCURACY when distinguishing real cipher:        31/50
+ACCURACY when distinguishing random permutation: 50/50
+TOTAL ACCURACY:                                  81/100
+
+Time: 88.40 [sec]
+
+(base) ema@x86_64-apple-darwin13 classical_distinguisher % python test_classical_distinguisher.py
+
+Cipher                            = RAIDEN
+
+key                               = [589632118, 1783892117, 2121113368, 2184787410]
+number of attacked rounds         = 8
+distinguisher success probability = 1/2^10.0 = 0.0009765625
+input difference                  = [2147483392, 0]
+round difference                  = [2147483392, 2147483392]
+number of samples                 = 2^10.0 = 1024
+
+
+SUMMARY:
+--------
+
+ACCURACY when distinguishing real cipher:        7/50
+ACCURACY when distinguishing random permutation: 50/50
+TOTAL ACCURACY:                                  57/100
+
+Time: 08.87 [sec]
+
+(base) ema@x86_64-apple-darwin13 classical_distinguisher % python test_classical_distinguisher.py
+
+Cipher                            = RAIDEN
+
+key                               = [2748994722, 321568463, 1254974593, 1013762694]
+number of attacked rounds         = 8
+distinguisher success probability = 1/2^10.0 = 0.0009765625
+input difference                  = [2147483392, 0]
+round difference                  = [2147483392, 2147483392]
+number of samples                 = 2^10.0 = 1024
+
+
+SUMMARY:
+--------
+
+ACCURACY when distinguishing real cipher:        147/500
+ACCURACY when distinguishing random permutation: 500/500
+TOTAL ACCURACY:                                  647/1000
+
+Time: 83.93 [sec]
+
+(base) ema@x86_64-apple-darwin13 classical_distinguisher % python test_classical_distinguisher.py
+
+Cipher                            = RAIDEN
+
+key                               = [2280537815, 3937819110, 1775235473, 478090679]
+number of attacked rounds         = 8
+distinguisher success probability = 1/2^10.0 = 0.0009765625
+input difference                  = [2147483392, 0]
+round difference                  = [2147483392, 2147483392]
+number of samples                 = 2^10.0 = 1024
+
+SUMMARY:
+--------
+
+ACCURACY when distinguishing real cipher:        968/5000
+ACCURACY when distinguishing random permutation: 5000/5000
+TOTAL ACCURACY:                                  5968/10000
+
+Time: 6022.24 [sec]
+
+
+
+
+
+---------------------
+
+TEA (fixed key)
+---------------
+
+number of attacked rounds         = 4
+number of samples                 = 2^14.39 = 21470
+ACCURACY when distinguishing real cipher:        31/50
+ACCURACY when distinguishing random permutation: 50/50
+TOTAL ACCURACY:                                  81/100
+
+RAIDEN (random key)
+-------------------
+
+
+number of attacked rounds         = 8
+number of samples                 = 2^10.0 = 1024
+ACCURACY when distinguishing real cipher:        7/50
+ACCURACY when distinguishing random permutation: 50/50
+TOTAL ACCURACY:                                  57/100
+
+
+number of attacked rounds         = 8
+number of samples                 = 2^10.0 = 1024
+ACCURACY when distinguishing real cipher:        147/500
+ACCURACY when distinguishing random permutation: 500/500
+TOTAL ACCURACY:                                  647/1000
+
+number of attacked rounds         = 8
+number of samples                 = 2^10.0 = 1024
+ACCURACY when distinguishing real cipher:        968/5000
+ACCURACY when distinguishing random permutation: 5000/5000
+TOTAL ACCURACY:                                  5968/10000
